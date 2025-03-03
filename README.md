@@ -36,6 +36,7 @@ Output: Texts, tables
 Document Layout Detection Methods: 
   - LayoutLMv3: https://arxiv.org/pdf/2204.08387
   - YoLo: https://arxiv.org/abs/1506.02640
+
 OCR Methods:
   - Tesseract-ocr: https://github.com/tesseract-ocr/tesseract
   - PaddleOCR: https://github.com/PaddlePaddle/PaddleOCR
@@ -59,15 +60,17 @@ This module aims to represents events in a chain or knowledge graph. The relatio
 In this process, causal relations will be identified.
 Input: Events
 Output: Event Chain or Knowledge Graph 
-** Event Chain:** 
+**Event Chain:** 
   - Time: Unsupervised Event Chain Mining from Multiple Documents
   - Causality: Event Story Line
-** Event Knowledge Graph or Event Evolutionary GraphEvolution:**
+**Event Knowledge Graph or Event Evolutionary GraphEvolution:**
   - Constructing Narrative Event Evolutionary Graph for Script Event Prediction
   
 ### 4. Event Prediction
 This module aims to predict future events given event chains, event knowledge graphs or event causal knowledge graphs.
+
 Input: Event chains or knowledge Graph 
+
 Output: Predict Events
 
 

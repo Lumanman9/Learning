@@ -48,10 +48,13 @@ Output: Events
 **Event Extraction From Text:**
   - A Survey of Event Extraction From Text
   - Event Extraction as Dependency Parsing
+    
 **Event Extraction(Anomaly Detection) From Tabular:**
   - Anomaly Detection of Tabular Data Using LLMs
+    
 **Event Extraction From Time-Series:**
   - Event Detection via Probability Density Function Regression
+    
 **Multimodal Event Detection:**
   - A survey of multimodal event detection based on data fusion: https://link.springer.com/article/10.1007/s00778-024-00878-5
 

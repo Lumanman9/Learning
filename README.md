@@ -27,6 +27,11 @@
 - Generating comprehensive risk reports with mitigation strategies and impact assessments
 - Identifying complex interdependencies between seemingly unrelated risk factors
 
+## Current Approach 
+- Infusion during dembedding
+- Infusion through cross-attention
+- Infusion through voting
+
 ## Technical Approach
 
 ### 1. Document Layout Detection

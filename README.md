@@ -30,9 +30,12 @@
 ## Technical Approach
 
 ### 1. Document Layout Detection
-Document Layout detection algorithm and OCR tools will be used to extract text, table, etc. from documents. 
+Document Layout detection algorithm and OCR tools will be used to extract text, table, etc. from documents.
+
 Input: Documents
+
 Output: Texts, tables
+
 Document Layout Detection Methods: 
   - LayoutLMv3: https://arxiv.org/pdf/2204.08387
   - YoLo: https://arxiv.org/abs/1506.02640
@@ -43,8 +46,11 @@ OCR Methods:
 
 ### 2. Event Extraction
 This module aims to extract events from mutimodal data. An event will have a triger(action) and several mentions(arguments) including time, location, participants. For time-series and tabular data, anmoly activities can be treated as events.
+
 Input: Text, Table, Time Series data
+
 Output: Events
+
 **Event Extraction From Text:**
   - A Survey of Event Extraction From Text: https://www.researchgate.net/publication/337638438_A_Survey_of_Event_Extraction_From_Text
   - Event Extraction as Dependency Parsing: https://aclanthology.org/P11-1163/
@@ -62,6 +68,7 @@ Output: Events
 **Causal Relation Identification from text:**
 
 Input: Text and event pairs
+
 Output: Wether two events have causal relation
 
   - Rule-based: explicit, using words like 'because', 'lead to'.
@@ -71,7 +78,9 @@ Output: Wether two events have causal relation
   - Diffusion based: 
 
 **Causal Relation Extraction from historical data:**
+
 Input: historical data with varibles 
+
 Output: Wethter two varibles have causal relation and consturct the causal graph
 
   - Constraint based using Conditional Independence Tests: PC algorithm/ Fast Causal Inference (FCI) algorithm
@@ -100,6 +109,7 @@ This module aims to represents events in a chain or knowledge graph. The relatio
 In this process, causal relations will be identified.
 
 Input: Events
+
 Output: Event Chain or Knowledge Graph 
 
 **Event Chain:** 
@@ -111,9 +121,12 @@ Output: Event Chain or Knowledge Graph
   - Constructing Narrative Event Evolutionary Graph for Script Event Prediction: https://arxiv.org/abs/1805.05081
 
 ### 5. Alignment
-This module aims to align elements between knowledge graphs or ontologies. 
-Input: An event 
-Output: 
+This module aims to align elements between knowledge graphs or ontologies.
+
+Input: An event and a causal knowledge graph
+
+Output: A concept in causal knowledge graph
+
   - Entity to Knowledge Graph:
     a. Improving Knowledge Graph Entity Alignment with Graph Augmentation https://arxiv.org/abs/2304.14585
     b. AutoAlign: Fully Automatic and Effective Knowledge Graph Alignment enabled by Large Language Models https://arxiv.org/abs/2307.11772
@@ -125,6 +138,7 @@ Output:
 This module aims to predict future events given event chains, event knowledge graphs or event causal knowledge graphs.
 
 Input: Event chains or causal knowledge Graph with event queries
+
 Output: Predict Events
 
  - Predicting an Effect Event from a New Cause Event Using a Semantic Web Based Abstraction Tree of Past Cause-Effect Event Pairs: https://ceur-ws.org/Vol-2029/paper19.pdf

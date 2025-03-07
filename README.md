@@ -2,7 +2,7 @@
 
 ## Problem Definition
 
-**Objective:** Develop a predictive analytics system that integrates multi-modal documents (text, tables, images) with time series data to forecast future events and generate comprehensive reports.
+**Objective:** Develop a predictive analytics system that integrates multi-modal documents (text, tables) with time series data to forecast future events and generate comprehensive reports.
 
 **Scope:**
 - **Prediction Types:**
